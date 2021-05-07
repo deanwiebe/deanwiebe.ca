@@ -1,0 +1,22 @@
+/********************************************** Contact *************************************/
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.contact-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact-title{
+    align-self: center;
+}

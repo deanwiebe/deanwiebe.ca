@@ -1,0 +1,38 @@
+/* ////////////////////////////////////////////////////////Begin page-header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.page-header{
+    background-color: #231F20;
+    position: unset;
+}
+.page-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EAEAEA;
+}
+@media only screen and (max-width: 517px){
+   .page-main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
+.page-card{
+    background-color: #231F20;
+    height: 500px;
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.website{
+    height: 100%;
+}
+.page-button{
+    margin: 0 5px;
+}
+.story{
+    display: flex;
+    align-items: center;
+    color: #231F20;
+    margin: 50px;
+    line-height: 2em;
+}

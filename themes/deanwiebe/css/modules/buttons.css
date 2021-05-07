@@ -1,0 +1,16 @@
+.contact{
+    justify-self: end;
+    display: flex;
+    align-items: flex-end;
+}
+.button{
+    text-align: center;
+    color: #EAEAEA !important;
+    /* background-color: #AD974F; */
+    background-color: #4f7d82 !important;
+    border-radius: 20px !important;
+    padding: 5px 20px !important;
+}
+.contact a{
+    color: #EAEAEA;
+}

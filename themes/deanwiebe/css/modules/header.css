@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #EAEAEA;
+    scroll-behavior: smooth;
+    background-color: #231F20;
+} 
+ .backgroundImage{
+    width: 100%;
+} 
+ .backgroundImage:after{
+    content: '';
+    position: fixed;
+    background-color: #231F20;
+    opacity: 0.8;
+    height: 200%;
+    width: 100%;
+
+} 
+.backgroundImage img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+a, .button{
+    color: #EAEAEA;
+    cursor: grab;
+}
+.wrapper{
+    position: relative;
+    height: 100vh;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 5px 5px 15px -1px #231F20;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo{
+    font-size: .7em;
+}
+#hamburger{
+    cursor: grab;
+    display: none;
+    color: #EAEAEA;
+}
+.nav{
+    display: block;
+}
+#nav-mobile{
+    position: absolute;
+    transform: translateX(-300px);
+    display: none;
+    font-size: 2em;
+    background-color: #231F20AB;
+    box-shadow: 5px 5px 15px 10px #000000;
+    border-radius: 1%;
+    padding: 20px;
+}
+
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px;
+}
+.nav ul li{
+    margin-right: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+main .container{
+    max-width: 1140px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    justify-content: space-between;
+    color: #EAEAEA;
+    height: 90%;
+    font-size: 1.2em;
+}
+@media only screen and (max-width: 740px){
+    main .container{
+        grid-template-columns: 1fr;
+    }
+    .nav{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
+.welcome-text{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-content: space-between;
+    font-size: 1.5em;
+    opacity: 0;
+}
+.tagline{
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+}
+@media only screen and (max-width: 984px){
+    .welcome-text{
+        font-size: 1em;
+    }
+}
